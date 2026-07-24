@@ -316,7 +316,7 @@ td, th {
   <tr>
     <td>create a file</td>
     <td></td>
-    <td>touch <span style="color: #5CE1E6">test.txt</span>\</td>
+    <td>touch <span style="color: #5CE1E6">test.txt</span>\<br><br><i>Spaces not allowed. Use underscore or no spaces</i></td>
   </tr>
   <tr>
     <td>rename a file</td>
@@ -347,6 +347,16 @@ td, th {
     <td>remove all image file metadata</td>
     <td></td>
     <td>exiftool -all= <span style="color: #5CE1E6">eventphotos.jpg</span></td>
+  </tr>
+  <tr>
+    <td>replace spaces with underscores in all file names in a directory</td>
+    <td></td>
+    <td>rename 's/ /_/g' *<br><br><i>To install "rename," run: sudo apt install rename</i></td>
+  </tr>
+  <tr>
+    <td>remove spaces in all file names in a directory</td>
+    <td></td>
+    <td>rename 's/ //g' *</td>
   </tr>
 </table>
 
